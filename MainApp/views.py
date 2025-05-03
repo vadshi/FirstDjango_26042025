@@ -37,7 +37,7 @@ def about(request):
 
 
 def get_item(request, item_id: int):
-    """ По указанному id возвращает элемент из списка"""
+    """ TODO: get item by id from db."""
     for item in items:
         if item["id"] == item_id:
             context = {
@@ -48,6 +48,7 @@ def get_item(request, item_id: int):
 
 
 def get_items(request):
+    """ TODO: get all items from db."""
     context = {
         "items": items 
         }
